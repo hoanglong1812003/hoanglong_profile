@@ -1,0 +1,52 @@
+/* Solution Architect Portfolio - Modern Design */
+:root {
+    --primary: #FF9500;
+    --primary-dark: #E68600;
+    --secondary: #0A84FF;
+    --accent: #5E5CE6;
+    --bg-dark: #000000;
+    --bg-card: #1C1C1E;
+    --bg-hover: #2C2C2E;
+    --text-primary: #FFFFFF;
+    --text-secondary: #EBEBF5;
+    --text-muted: #8E8E93;
+    --border: #38383A;
+    --shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    --radius: 12px;
+    --transition: 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--bg-dark);
+    color: var(--text-secondary);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-primary);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--primary-dark);
+}

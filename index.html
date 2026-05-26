@@ -1,303 +1,803 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>PvP Nguyễn Phát | @phatvphat - Personal Portfolio</title>
-    <meta name="description" content="Personal portfolio của phatvphat." />
+    <title>Long Huynh | Solution Architect - AWS & Cloud</title>
+    <meta name="description" content="Solution Architect specializing in AWS, Cloud Computing, and AI. Building scalable, secure, and cost-optimized cloud solutions." />
+    <meta name="keywords" content="Solution Architect, AWS, Cloud Computing, AI, Cloud Solutions, Huỳnh Hoàng Long" />
     <link rel="icon" href="img/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        /* Inline CSS for immediate rendering */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+        
+        :root {
+            --primary: #FF9500;
+            --primary-dark: #E68600;
+            --secondary: #0A84FF;
+            --accent: #5E5CE6;
+            --bg-dark: #000000;
+            --bg-secondary: #0A0A0A;
+            --bg-card: #1C1C1E;
+            --bg-hover: #2C2C2E;
+            --text-primary: #FFFFFF;
+            --text-secondary: #EBEBF5;
+            --text-muted: #8E8E93;
+            --border: #38383A;
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+            --radius: 12px;
+            --transition: 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-secondary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-primary);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--primary-dark);
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        button {
+            font-family: inherit;
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+    </style>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
     <header class="site-header" id="top">
         <div class="container nav-shell">
-            <a class="brand" href="#hero">phatnef.me</a>
-            <button class="menu-toggle" aria-label="Mở menu điều hướng" aria-expanded="false">Menu</button>
+            <a class="brand" href="#hero">
+                <span class="brand-name">Long Huynh</span>
+                <span class="brand-title">Solution Architect</span>
+            </a>
+            <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <nav class="main-nav" id="main-nav">
-                <a href="#about">Giới thiệu</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#certifications">Certifications</a>
                 <a href="#projects">Projects</a>
-                <a href="#gallery">Album</a>
-                <a href="#insights">Thông tin</a>
-                <a href="#contact">Liên hệ</a>
+                <a href="#events">Events</a>
+                <a href="#contact" class="nav-cta">Contact</a>
             </nav>
         </div>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="hero" id="hero">
-            <div class="hero-grid container">
+            <div class="hero-background">
+                <div class="hero-grid-pattern"></div>
+                <div class="hero-gradient"></div>
+            </div>
+            <div class="container hero-container">
                 <div class="hero-content">
-                    <p class="kicker">Tech / Backend / Product Thinking</p>
-                    <h1>Hi there!</h1>
-                    <p class="hero-text">
-                        Mình là Nguyễn Phát, backend engineer yêu thích clean architecture, performance và trải nghiệm
-                        người dùng mượt mà.
-                        Landing page này tổng hợp profile, ảnh cá nhân, dự án private/public và các thông tin công việc
-                        liên quan.
+                    <div class="hero-badge">
+                        <i class="fas fa-cloud"></i>
+                        <span>Solution Architect / AWS / Cloud</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Building <span class="gradient-text">Scalable</span> & 
+                        <span class="gradient-text">Secure</span> Cloud Solutions
+                    </h1>
+                    <p class="hero-description">
+                        I am an Information Technology graduate pursuing a career as a Solution Architect, 
+                        with a strong passion for cloud computing, AWS, AI, and leveraging technology to 
+                        solve real-world problems and create meaningful value.
                     </p>
-                    <!-- <div class="hero-actions">
-                        <a href="#projects" class="btn btn-primary">Xem dự án</a>
-                        <a href="#contact" class="btn btn-outline">Kết nối ngay</a>
-                    </div> -->
-                    <ul class="hero-stats">
-                        <li><strong>5+</strong><span>Học hỏi & phát triển</span></li>
-                        <li><strong>10+</strong><span>Dự án cá nhân/nhóm</span></li>
-                    </ul>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View Projects</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <span>Get in Touch</span>
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">1+</div>
+                            <div class="stat-label">Years at FCAJ</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">2+</div>
+                            <div class="stat-label">AWS Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">8+</div>
+                            <div class="stat-label">Community Events</div>
+                        </div>
+                    </div>
                 </div>
-                <aside class="hero-card">
-                    <div class="avatar-flip" aria-label="Avatar profile">
-                        <div class="avatar-flip-inner">
-                            <img class="avatar-face avatar-front" src="img/avatar.jpg" alt="Ảnh đại diện avatar 1" />
-                            <img class="avatar-face avatar-back" src="img/avatar2.jpg" alt="Ảnh đại diện avatar 2" />
+                <div class="hero-visual">
+                    <div class="profile-card">
+                        <div class="profile-image-wrapper">
+                            <img src="img/long_image/avatar.png" alt="Long Huynh - Solution Architect" class="profile-image" />
+                            <div class="profile-ring"></div>
+                            <div class="profile-status">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Available for opportunities</span>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h2>Long Huynh</h2>
+                            <p class="profile-username">@hoanglong1812003</p>
+                            <div class="profile-tags">
+                                <span><i class="fab fa-aws"></i> AWS</span>
+                                <span><i class="fas fa-cloud"></i> Cloud</span>
+                                <span><i class="fas fa-brain"></i> AI</span>
+                            </div>
+                            <div class="profile-social">
+                                <a href="https://www.facebook.com/fcajlong" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/huynhhoanglong1812003" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/hoanglong1812003" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="mailto:hoanglong1812003@gmail.com" aria-label="Email">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <h2>Nguyen Phat</h2>
-                    <p class="username-tag"><span class="username-at">@</span>phatvphat</p>
-                    <div class="chip-row">
-                        <span>PHP</span>
-                        <span>Node.js</span>
-                        <span>.Net Core</span>
-                        <span>MariaDB/MySQL</span>
-                    </div>
-                </aside>
+                </div>
             </div>
-            <div class="hero-glow hero-glow-a"></div>
-            <div class="hero-glow hero-glow-b"></div>
-        </section>
-
-        <section class="section container" id="about">
-            <div class="section-head">
-                <p class="kicker">Giới thiệu chung</p>
-                <h2>Thông tin về mình nè 😆</h2>
-            </div>
-            <div class="about-grid">
-                <article class="panel about-panel">
-                    <p class="panel-label">About me</p>
-                    <p>
-                        Mình là Nguyễn Văn Thành Phát, tốt nghiệp ngành Công Nghệ Thông Tin tại HUTECH (Software
-                        Engineering) với GPA 3.38/4.0. Định hướng chính là backend development, xây API ổn định, dễ
-                        scale, dễ maintain và tích hợp tốt với web/mobile.
-                    </p>
-                    <p>
-                        Mình từng làm Part-time Backend tại CoHost AI (08/2022 - 12/2022), tham gia phân tích API trong
-                        hệ booking/travel và phát triển API tích hợp đa kênh cho nghiệp vụ đặt phòng.
-                    </p>
-                </article>
-                <article class="panel contact-panel">
-                    <p class="panel-label">Contact overview</p>
-                    <div class="contact-cards">
-                        <div class="contact-item">
-                            <h3>Email</h3>
-                            <p><a href="mailto:phatvphat@gmail.com">phatvphat@gmail.com</a></p>
-                        </div>
-                        <div class="contact-item">
-                            <h3>Location</h3>
-                            <p>Ho Chi Minh City, Vietnam</p>
-                        </div>
-                        <div class="contact-item">
-                            <h3>Phone</h3>
-                            <p><a href="tel:+84777100449">+84 777 100 449</a></p>
-                        </div>
-                        <div class="contact-item">
-                            <h3>Social</h3>
-                            <p><a href="https://fb.me/pvp.sad" target="_blank" rel="noreferrer">fb.me/pvp.sad</a></p>
-                        </div>
-                    </div>
-                </article>
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <i class="fas fa-chevron-down"></i>
             </div>
         </section>
 
-        <section class="section container" id="projects">
-            <div class="section-head">
-                <p class="kicker">Showcase dự án</p>
-                <h2>Public & private projects 🧐</h2>
-            </div>
-            <div class="project-filter">
-                <button class="filter-btn active" data-filter="all">Tất cả</button>
-                <button class="filter-btn" data-filter="public">Public</button>
-                <button class="filter-btn" data-filter="private">Private</button>
-            </div>
-            <div class="project-grid">
-                <article class="project-card" data-project="private">
-                    <img class="project-image" src="img/project1.png" alt="Internal Booking API preview"
-                        data-full="img/project1.png" data-alt="Booking & Rental Services at SekaiZ">
-                    <div class="project-content">
-                        <span class="badge private">Private</span>
-                        <div class="project-title-row">
-                            <h3>Booking & Rental Services at SekaiZ</h3>
-                            <span class="project-year">2023 - 2026</span>
+        <!-- About Section -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">About Me</span>
+                    <h2 class="section-title">Passionate About Cloud & Innovation</h2>
+                    <p class="section-subtitle">
+                        Dedicated to designing secure, scalable, and cost-optimized cloud solutions
+                    </p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>
+                                I am currently involved in the <strong>First Cloud AI Journey (FCAJ)</strong> program, 
+                                where I have the opportunity to support the community while continuously learning and 
+                                gaining hands-on experience with AWS services. This journey has helped me strengthen 
+                                my technical foundation and develop my ability to communicate, guide, and support 
+                                others beginning their cloud learning journey.
+                            </p>
+                            <p>
+                                I am working toward the <strong>AWS Certified Solutions Architect – Associate</strong> 
+                                certification, focusing on understanding how to design secure, scalable, cost-optimized, 
+                                reliable, and practical cloud solutions that align with real business needs.
+                            </p>
+                            <p>
+                                I consider myself someone who is not afraid of challenges or unfamiliar knowledge. 
+                                I believe that every new concept, technical issue, or difficult problem is an opportunity 
+                                to grow. I am adaptable, eager to learn, and always willing to improve through practice, 
+                                persistence, and continuous reflection.
+                            </p>
+                            <p>
+                                Beyond technical skills, I deeply care about people and the impact that knowledge can have 
+                                when shared. To me, a truly capable person is not only strong in their expertise but also 
+                                someone who can explain, guide, and inspire others through what they have learned.
+                            </p>
                         </div>
-                        <p>Mình là người xây dựng chính cho hệ thống booking và rental service. Dịch vụ tập trung vào
-                            quản lý booking đa kênh, theo dõi lịch/phòng, triển khai các gói rental media (carousel
-                            post, ảnh gắn link), hỗ trợ lên lịch đăng bài và quản lý trạng thái chiến dịch cho đối tác.
+                        <div class="about-highlights">
+                            <div class="highlight-card">
+                                <i class="fas fa-bullseye"></i>
+                                <h3>Long-term Vision</h3>
+                                <p>
+                                    To become a skilled and practical Solution Architect who can design effective 
+                                    technology solutions while contributing to the community and helping people gain 
+                                    access to opportunities in cloud, AI, and technology.
+                                </p>
+                            </div>
+                            <div class="highlight-card">
+                                <i class="fas fa-heart"></i>
+                                <h3>Core Values</h3>
+                                <p>
+                                    Continuous learning, knowledge sharing, community support, and creating meaningful 
+                                    impact through technology and education.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-sidebar">
+                        <div class="info-card">
+                            <h3><i class="fas fa-user"></i> Personal Info</h3>
+                            <ul class="info-list">
+                                <li>
+                                    <span class="info-label">Name</span>
+                                    <span class="info-value">Huỳnh Hoàng Long</span>
+                                </li>
+                                <li>
+                                    <span class="info-label">Location</span>
+                                    <span class="info-value">Thu Duc, Ho Chi Minh City</span>
+                                </li>
+                                <li>
+                                    <span class="info-label">Email</span>
+                                    <span class="info-value">
+                                        <a href="mailto:hoanglong1812003@gmail.com">hoanglong1812003@gmail.com</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="info-label">Phone</span>
+                                    <span class="info-value">
+                                        <a href="tel:+84376515166">+84 376 515 166</a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info-card">
+                            <h3><i class="fas fa-code"></i> Technical Focus</h3>
+                            <div class="tech-tags">
+                                <span class="tech-tag aws">AWS Cloud</span>
+                                <span class="tech-tag">Solution Architecture</span>
+                                <span class="tech-tag">Cloud Security</span>
+                                <span class="tech-tag">Cost Optimization</span>
+                                <span class="tech-tag">AI & ML</span>
+                                <span class="tech-tag">Infrastructure as Code</span>
+                                <span class="tech-tag">DevOps</span>
+                                <span class="tech-tag">Serverless</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section experience-section" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Experience</span>
+                    <h2 class="section-title">Professional Journey</h2>
+                    <p class="section-subtitle">
+                        Building expertise through hands-on experience and community engagement
+                    </p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3>First Cloud AI Journey (FCAJ)</h3>
+                                    <p class="timeline-role">Community Supporter & AWS Learner</p>
+                                </div>
+                                <span class="timeline-date">2025 - Present</span>
+                            </div>
+                            <div class="timeline-body">
+                                <p>
+                                    Actively participating in the FCAJ program, supporting community members while 
+                                    gaining hands-on experience with AWS services. Contributing to knowledge sharing 
+                                    and helping others begin their cloud learning journey.
+                                </p>
+                                <ul class="timeline-achievements">
+                                    <li><i class="fas fa-check"></i> Supporting 8+ community events and workshops</li>
+                                    <li><i class="fas fa-check"></i> Hands-on experience with AWS core services</li>
+                                    <li><i class="fas fa-check"></i> Mentoring beginners in cloud computing</li>
+                                    <li><i class="fas fa-check"></i> Building practical AWS projects</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3>AWS Certification Journey</h3>
+                                    <p class="timeline-role">Solutions Architect - Associate Track</p>
+                                </div>
+                                <span class="timeline-date">2025 - In Progress</span>
+                            </div>
+                            <div class="timeline-body">
+                                <p>
+                                    Pursuing AWS Certified Solutions Architect – Associate certification with focus 
+                                    on designing secure, scalable, cost-optimized, and reliable cloud solutions aligned 
+                                    with real business needs.
+                                </p>
+                                <ul class="timeline-achievements">
+                                    <li><i class="fas fa-check"></i> Deep dive into AWS Well-Architected Framework</li>
+                                    <li><i class="fas fa-check"></i> Practical implementation of cloud design patterns</li>
+                                    <li><i class="fas fa-check"></i> Security and compliance best practices</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Certifications Section -->
+        <section class="section certifications-section" id="certifications">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Certifications</span>
+                    <h2 class="section-title">Professional Credentials</h2>
+                    <p class="section-subtitle">
+                        Validated skills and knowledge through industry-recognized certifications
+                    </p>
+                </div>
+                <div class="certifications-grid">
+                    <!-- TOEIC Certificate -->
+                    <article class="cert-card">
+                        <div class="cert-image-wrapper">
+                            <img src="img/cert/toiec.jpg" alt="TOEIC Certificate - Score 745" class="cert-image" />
+                            <div class="cert-overlay">
+                                <button class="cert-view-btn" onclick="window.open('img/cert/toiec.jpg', '_blank')">
+                                    <i class="fas fa-expand"></i>
+                                    <span>View Certificate</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cert-content">
+                            <div class="cert-header">
+                                <div class="cert-icon">
+                                    <i class="fas fa-language"></i>
+                                </div>
+                                <div class="cert-badge-verified">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Verified</span>
+                                </div>
+                            </div>
+                            <h3 class="cert-title">TOEIC Certificate</h3>
+                            <p class="cert-issuer">
+                                <i class="fas fa-building"></i>
+                                Issued by IIG Vietnam
+                            </p>
+                            <div class="cert-score-section">
+                                <div class="cert-total-score">
+                                    <span class="score-label">Total Score</span>
+                                    <span class="score-value">745</span>
+                                    <span class="score-max">/ 990</span>
+                                </div>
+                                <div class="cert-breakdown">
+                                    <div class="score-item">
+                                        <i class="fas fa-headphones"></i>
+                                        <div class="score-details">
+                                            <span class="score-name">Listening</span>
+                                            <span class="score-points">425</span>
+                                        </div>
+                                    </div>
+                                    <div class="score-item">
+                                        <i class="fas fa-book-open"></i>
+                                        <div class="score-details">
+                                            <span class="score-name">Reading</span>
+                                            <span class="score-points">320</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cert-validity">
+                                <div class="validity-item">
+                                    <i class="fas fa-calendar-check"></i>
+                                    <div>
+                                        <span class="validity-label">Issued</span>
+                                        <span class="validity-date">December 5, 2024</span>
+                                    </div>
+                                </div>
+                                <div class="validity-item">
+                                    <i class="fas fa-calendar-times"></i>
+                                    <div>
+                                        <span class="validity-label">Valid Until</span>
+                                        <span class="validity-date">December 5, 2026</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- AWS Certification (In Progress) -->
+                    <article class="cert-card cert-in-progress">
+                        <div class="cert-content-full">
+                            <div class="cert-header">
+                                <div class="cert-icon aws-icon">
+                                    <i class="fab fa-aws"></i>
+                                </div>
+                                <div class="cert-badge-progress">
+                                    <i class="fas fa-spinner fa-pulse"></i>
+                                    <span>In Progress</span>
+                                </div>
+                            </div>
+                            <h3 class="cert-title">AWS Certified Solutions Architect</h3>
+                            <p class="cert-level">Associate Level</p>
+                            <p class="cert-description">
+                                Currently preparing for the AWS Certified Solutions Architect – Associate 
+                                certification, focusing on designing secure, scalable, cost-optimized, 
+                                and reliable cloud solutions.
+                            </p>
+                            <div class="cert-focus-areas">
+                                <h4>Focus Areas:</h4>
+                                <ul class="focus-list">
+                                    <li><i class="fas fa-check"></i> AWS Well-Architected Framework</li>
+                                    <li><i class="fas fa-check"></i> Security & Compliance</li>
+                                    <li><i class="fas fa-check"></i> Cost Optimization</li>
+                                    <li><i class="fas fa-check"></i> High Availability & Scalability</li>
+                                </ul>
+                            </div>
+                            <div class="cert-progress-bar">
+                                <div class="progress-label">
+                                    <span>Preparation Progress</span>
+                                    <span>55%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" style="width: 55%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Projects</span>
+                    <h2 class="section-title">Featured Work</h2>
+                    <p class="section-subtitle">
+                        Hands-on AWS projects demonstrating cloud architecture and security expertise
+                    </p>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project 1: My First Workshop -->
+                    <article class="project-card featured">
+                        <div class="project-image-wrapper">
+                            <img src="img/myfirstworkshop/guardduty.jpg" alt="AWS GuardDuty Security Workshop" class="project-image" />
+                            <div class="project-overlay">
+                                <a href="https://github.com/hoanglong1812003/MyFirstWorkShop" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    <span>View on GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div class="project-badges">
+                                    <span class="badge badge-public">Public</span>
+                                    <span class="badge badge-aws">AWS</span>
+                                </div>
+                                <span class="project-year">2025</span>
+                            </div>
+                            <h3 class="project-title">My First Workshop</h3>
+                            <p class="project-description">
+                                Implemented AWS GuardDuty for threat detection and response, integrated with 
+                                Security Hub for comprehensive security assessment. Demonstrates practical 
+                                understanding of AWS security services and event-driven architecture.
+                            </p>
+                            <div class="project-tech">
+                                <span><i class="fas fa-shield-alt"></i> GuardDuty</span>
+                                <span><i class="fas fa-security"></i> Security Hub</span>
+                                <span><i class="fas fa-route"></i> CloudTrail</span>
+                                <span><i class="fas fa-server"></i> EC2</span>
+                                <span><i class="fas fa-bell"></i> EventBridge</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/hoanglong1812003/MyFirstWorkShop" target="_blank" rel="noopener noreferrer" class="project-btn">
+                                    <i class="fab fa-github"></i>
+                                    <span>Source Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Chatbot FCAJ -->
+                    <article class="project-card featured">
+                        <div class="project-image-wrapper">
+                            <img src="img/chatbotfcaj/chatbotfcaj.png" alt="FCAJ Chatbot with RAG" class="project-image" />
+                            <div class="project-overlay">
+                                <a href="https://chatbotfcaj.streamlit.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <div class="project-badges">
+                                    <span class="badge badge-public">Public</span>
+                                    <span class="badge badge-ai">AI/ML</span>
+                                </div>
+                                <span class="project-year">2026</span>
+                            </div>
+                            <h3 class="project-title">Chatbot FCAJ</h3>
+                            <p class="project-description">
+                                Intelligent chatbot using RAG (Retrieval-Augmented Generation) methodology to 
+                                accurately retrieve and answer questions from internal documentation. Helps 
+                                students access information efficiently through natural language queries.
+                            </p>
+                            <div class="project-tech">
+                                <span><i class="fas fa-robot"></i> RAG</span>
+                                <span><i class="fas fa-brain"></i> Groq</span>
+                                <span><i class="fas fa-code"></i> Streamlit</span>
+                                <span><i class="fas fa-database"></i> Hugging Face</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://chatbotfcaj.streamlit.app/" target="_blank" rel="noopener noreferrer" class="project-btn project-btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/hoanglong1812003/chatbotfcaj" target="_blank" rel="noopener noreferrer" class="project-btn">
+                                    <i class="fab fa-github"></i>
+                                    <span>Source Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events & Community Section -->
+        <section class="section events-section" id="events">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Community Engagement</span>
+                    <h2 class="section-title">Events & Activities</h2>
+                    <p class="section-subtitle">
+                        Active participation in cloud computing community events and knowledge sharing
+                    </p>
+                </div>
+                
+                <!-- HD Bank Hackathon - Featured -->
+                <div class="featured-event">
+                    <div class="featured-event-content">
+                        <div class="event-badge-featured">
+                            <i class="fas fa-trophy"></i>
+                            <span>Competition</span>
+                        </div>
+                        <h3>HD Bank Hackathon</h3>
+                        <p class="event-description">
+                            Participated in HD Bank Hackathon, collaborating with team members to develop 
+                            innovative solutions for banking challenges. Applied problem-solving skills and 
+                            technical knowledge in a competitive environment.
                         </p>
-                        <ul>
-                            <li>.Net Core, PHP, MariaDB, MongoDB</li>
-                            <li>Service page: <a href="https://dash.sekaiz.net" target="_blank"
-                                    rel="noreferrer">dash.sekaiz.net</a></li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="project-card" data-project="public">
-                    <img class="project-image" src="img/project2.png" alt="Dev Utilities Kit preview"
-                        data-full="img/project2.png" data-alt="DanGianGame (3D)">
-                    <div class="project-content">
-                        <span class="badge public">Public</span>
-                        <div class="project-title-row">
-                            <h3>DanGianGame (3D)</h3>
-                            <span class="project-year">2024 - 2025</span>
+                        <div class="event-meta">
+                            <span><i class="fas fa-users"></i> Team Competition</span>
+                            <span><i class="fas fa-lightbulb"></i> Innovation Challenge</span>
                         </div>
-                        <p>Personal project game dân gian/card game; đã hoàn thành CoCaNgua và bản Uno (chưa phát hành
-                            chính thức).</p>
-                        <ul>
-                            <li>Unity, C#</li>
-                            <li>Showcase: <a href="https://fb.watch/u9C_jnaxcg/" target="_blank"
-                                    rel="noreferrer">facebook video</a></li>
-                        </ul>
                     </div>
-                </article>
-                <article class="project-card" data-project="private">
-                    <img class="project-image" src="img/project3.png" alt="Realtime Monitoring Hub preview"
-                        data-full="img/project3.png" data-alt="Discord Music Bot">
-                    <div class="project-content">
-                        <span class="badge private">Private</span>
-                        <div class="project-title-row">
-                            <h3>Discord Music Bot</h3>
-                            <span class="project-year">2020 - Nay</span>
+                    <div class="featured-event-gallery">
+                        <div class="gallery-grid-featured">
+                            <img src="img/long_image/9-HD Bank Hackathon/19.jfif" alt="HD Bank Hackathon 1" />
+                            <img src="img/long_image/9-HD Bank Hackathon/20.jfif" alt="HD Bank Hackathon 2" />
+                            <img src="img/long_image/9-HD Bank Hackathon/21.jfif" alt="HD Bank Hackathon 3" />
+                            <img src="img/long_image/9-HD Bank Hackathon/22.jfif" alt="HD Bank Hackathon 4" />
+                            <img src="img/long_image/9-HD Bank Hackathon/23.jfif" alt="HD Bank Hackathon 5" />
                         </div>
-                        <p>Bot nghe nhạc nội bộ cho Discord server, duy trì và phát triển liên tục từ 2020 đến nay.</p>
-                        <ul>
-                            <li>Node.js, MongoDB, .Net Core, MariaDB</li>
-                            <li>Server: <a href="https://discord.phatnef.me" target="_blank"
-                                    rel="noreferrer">discord.phatnef.me</a></li>
-                        </ul>
                     </div>
-                </article>
-                <article class="project-card" data-project="public">
-                    <img class="project-image" src="img/project4.1.png" alt="Tutor Center Management preview"
-                        data-full="img/project4.1.png" data-alt="Tutor Center Management">
-                    <div class="project-content">
-                        <span class="badge public">Public</span>
-                        <div class="project-title-row">
-                            <h3>Tutor Center Management (Learning Project)</h3>
-                            <span class="project-year">Đại học</span>
-                        </div>
-                        <p>Dự án học tập web & mobile, xây hệ thống quản lý trung tâm gia sư và API cho mobile app.</p>
-                        <ul>
-                            <li>Node.js, PHP, MariaDB, Flutter (team size: 4)</li>
-                            <li>Demo: <a href="https://cn-wibu.phatnef.me" target="_blank"
-                                    rel="noreferrer">cn-wibu.phatnef.me</a></li>
-                            <li>Github: <a href="https://bit.ly/wibuteam-nodejs-ttgs" target="_blank"
-                                    rel="noreferrer">NodeJS</a> / <a href="https://bit.ly/wibuteam-php-ttgs"
-                                    target="_blank" rel="noreferrer">PHP</a></li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="project-card" data-project="public">
-                    <img class="project-image" src="img/project4.0.png" alt="Rental Cloth Shop preview"
-                        data-full="img/project4.0.png" data-alt="Rental Cloth Shop">
-                    <div class="project-content">
-                        <span class="badge public">Public</span>
-                        <div class="project-title-row">
-                            <h3>Rental Cloth Shop (Learning Project)</h3>
-                            <span class="project-year">Đại học</span>
-                        </div>
-                        <p>Dự án học tập web & mobile cho nghiệp vụ thuê đồ, tập trung API structure và quản trị dữ
-                            liệu.</p>
-                        <ul>
-                            <li>PHP, MariaDB, Flutter (team size: 3)</li>
-                            <li>Demo: <a href="https://cs-wibu.phatnef.me" target="_blank"
-                                    rel="noreferrer">cs-wibu.phatnef.me</a></li>
-                            <li>Github: <a href="https://bit.ly/wibuteam-php-tdc" target="_blank" rel="noreferrer">PHP
-                                    source</a></li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
-        </section>
+                </div>
 
-        <section class="section container" id="gallery">
-            <div class="section-head">
-                <p class="kicker">Album ảnh cá nhân</p>
-                <h2>Tách tách 📸</h2>
-            </div>
-            <div class="gallery-grid">
-                <button class="gallery-item" type="button" data-full="img/IMG_9542.jpg" data-alt="Ảnh cá nhân 1">
-                    <img src="img/IMG_9542.jpg" alt="Ảnh cá nhân 1" />
-                    <span class="gallery-hint">Xem full</span>
-                </button>
-                <button class="gallery-item" type="button" data-full="img/IMG_9553_-2.jpg" data-alt="Ảnh cá nhân 2">
-                    <img src="img/IMG_9553_-2.jpg" alt="Ảnh cá nhân 2" />
-                    <span class="gallery-hint">Xem full</span>
-                </button>
-                <button class="gallery-item" type="button" data-full="img/20191214-IMG_9548.jpg"
-                    data-alt="Ảnh cá nhân 3">
-                    <img src="img/20191214-IMG_9548.jpg" alt="Ảnh cá nhân 3" />
-                    <span class="gallery-hint">Xem full</span>
-                </button>
-                <button class="gallery-item" type="button" data-full="img/IMG_9894.jpg" data-alt="Ảnh cá nhân 4">
-                    <img src="img/IMG_9894.jpg" alt="Ảnh cá nhân 4" />
-                    <span class="gallery-hint">Xem full</span>
-                </button>
-                <button class="gallery-item" type="button" data-full="img/wok-6.jpg" data-alt="Ảnh cá nhân 5">
-                    <img src="img/wok-6.jpg" alt="Ảnh cá nhân 5" />
-                    <span class="gallery-hint">Xem full</span>
-                </button>
-            </div>
-        </section>
+                <!-- Community Events Grid -->
+                <div class="events-grid">
+                    <!-- Event 1: Community Day May -->
+                    <article class="event-card">
+                        <div class="event-image-wrapper">
+                            <img src="img/long_image/1-Community Day May/1.jfif" alt="Community Day May" class="event-image" />
+                        </div>
+                        <div class="event-content">
+                            <h4>Community Day May</h4>
+                            <p>Engaging with the cloud community, sharing knowledge and networking with fellow enthusiasts.</p>
+                        </div>
+                    </article>
 
-        <section class="section container" id="insights">
-            <div class="section-head">
-                <p class="kicker">Thông tin liên quan</p>
-                <h2>Định hướng làm việc và công nghệ ưu tiên</h2>
-            </div>
-            <div class="insight-grid">
-                <article class="panel">
-                    <h3>Nguyên tắc phát triển</h3>
-                    <p>Ưu tiên kiến trúc rõ ràng, unit test tại điểm trọng yếu, review code và tối ưu chi phí vận hành.
-                    </p>
-                </article>
-                <article class="panel">
-                    <h3>Tech stack thường dùng</h3>
-                    <p>PHP, Node.js, .Net Core, MariaDB/MySQL, REST API, queue jobs, CI/CD cơ bản và hệ thống giám sát
-                        runtime.</p>
-                </article>
-                <article class="panel">
-                    <h3>Mục tiêu 2026+</h3>
-                    <p>Nâng cấp năng lực system design, security by default và tạo sản phẩm siu thú vị. 👐
-                    </p>
-                </article>
+                    <!-- Event 2: Meet Up -->
+                    <article class="event-card">
+                        <div class="event-image-wrapper">
+                            <img src="img/long_image/2-Meet Up/2.jfif" alt="FCAJ Meet Up" class="event-image" />
+                        </div>
+                        <div class="event-content">
+                            <h4>FCAJ Meet Up</h4>
+                            <p>Connecting with community members and discussing cloud computing trends and best practices.</p>
+                        </div>
+                    </article>
+
+                    <!-- Event 3: Hutech Kick off -->
+                    <article class="event-card">
+                        <div class="event-image-wrapper">
+                            <img src="img/long_image/3-Hutech Kick off/4.jfif" alt="Hutech Kick Off" class="event-image" />
+                        </div>
+                        <div class="event-content">
+                            <h4>Hutech Kick Off</h4>
+                            <p>Launching cloud computing initiatives at Hutech, inspiring students to explore AWS.</p>
+                        </div>
+                    </article>
+
+                    <!-- Event 4: Cloud Mastery -->
+                    <article class="event-card">
+                        <div class="event-image-wrapper">
+                            <img src="img/long_image/4-Cloud Mastery/6.jfif" alt="Cloud Mastery Workshop" class="event-image" />
+                        </div>
+                        <div class="event-content">
+                            <h4>Cloud Mastery Workshop</h4>
+                            <p>Hands-on workshop covering AWS fundamentals and practical cloud architecture patterns.</p>
+                        </div>
+                    </article>
+
+                    <!-- Event 5: Hutech IT Open Day -->
+                    <article class="event-card">
+                        <div class="event-image-wrapper">
+                            <img src="img/long_image/5-Hutech IT open day/8.jfif" alt="Hutech IT Open Day" class="event-image" />
+                        </div>
+                        <div class="event-content">
+                            <h4>Hutech IT Open Day</h4>
+                            <p>Showcasing cloud technologies and career opportunities in cloud computing to students.</p>
+                        </div>
+                    </article>
+
+                    <!-- Event 6: Swinburne -->
+                    <article class="event-card">
+                        <div class="event-image-wrapper">
+                            <img src="img/long_image/6-Swinburne/10.jfif" alt="Swinburne Collaboration" class="event-image" />
+                        </div>
+                        <div class="event-content">
+                            <h4>Swinburne Collaboration</h4>
+                            <p>Cross-university collaboration event promoting cloud computing education and awareness.</p>
+                        </div>
+                    </article>
+
+                    <!-- Event 7: Cloud Mastery 2 -->
+                    <article class="event-card">
+                        <div class="event-image-wrapper">
+                            <img src="img/long_image/7-Cloud mastery 2/13.jfif" alt="Cloud Mastery 2" class="event-image" />
+                        </div>
+                        <div class="event-content">
+                            <h4>Cloud Mastery 2</h4>
+                            <p>Advanced cloud workshop focusing on security, scalability, and cost optimization.</p>
+                        </div>
+                    </article>
+
+                    <!-- Event 8: Cloud Mastery 3 -->
+                    <article class="event-card">
+                        <div class="event-image-wrapper">
+                            <img src="img/long_image/8-Cloud mastery 3/15.jfif" alt="Cloud Mastery 3" class="event-image" />
+                        </div>
+                        <div class="event-content">
+                            <h4>Cloud Mastery 3</h4>
+                            <p>Continuing the cloud mastery series with real-world AWS implementation scenarios.</p>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
     </main>
 
-    <div class="lightbox" id="gallery-lightbox" aria-hidden="true">
-        <button class="lightbox-close" type="button" aria-label="Đóng xem ảnh">×</button>
-        <img class="lightbox-image" src="" alt="">
-    </div>
-    <button class="scroll-top" id="scroll-top" type="button" aria-label="Trở lên đầu trang">↑</button>
-
+    <!-- Contact Section / Footer -->
     <footer class="site-footer" id="contact">
-        <div class="container footer-grid">
-            <div>
-                <h2>Let&apos;s build something meaningful.</h2>
-                <p>Sẵn sàng hợp tác cho các dự án backend, tối ưu hệ thống hoặc phát triển sản phẩm mới.</p>
-            </div>
-            <div class="footer-links">
-                <a href="mailto:phatvphat@gmail.com">phatvphat@gmail.com</a>
-                <a href="tel:+84777100449">+84 777 100 449</a>
-                <a href="https://fb.me/pvp.sad" target="_blank" rel="noreferrer">Facebook</a>
+        <div class="footer-content">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-main">
+                        <h2>Let's Build Something Great Together</h2>
+                        <p class="footer-description">
+                            I'm always open to discussing new opportunities, collaborations, or just 
+                            connecting with fellow cloud enthusiasts. Whether you're looking for a 
+                            Solution Architect or want to share knowledge, feel free to reach out.
+                        </p>
+                        <div class="footer-cta">
+                            <a href="mailto:hoanglong1812003@gmail.com" class="btn btn-primary btn-large">
+                                <i class="fas fa-envelope"></i>
+                                <span>Get in Touch</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>Contact Information</h3>
+                        <ul class="contact-list">
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <span class="contact-label">Email</span>
+                                    <a href="mailto:hoanglong1812003@gmail.com">hoanglong1812003@gmail.com</a>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <span class="contact-label">Phone</span>
+                                    <a href="tel:+84376515166">+84 376 515 166</a>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <span class="contact-label">Location</span>
+                                    <span>Thu Duc, Ho Chi Minh City, Vietnam</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="footer-social">
+                            <h4>Connect With Me</h4>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/fcajlong" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/huynhhoanglong1812003" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/hoanglong1812003" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <p class="copyright">© 2019 @phatvphat. All rights reserved.</p>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Long Huynh. All rights reserved.</p>
+                <p class="footer-tagline">Designed with <i class="fas fa-heart"></i> for the cloud community</p>
+            </div>
+        </div>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top" type="button" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="js/main.js"></script>
 </body>
