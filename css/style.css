@@ -716,6 +716,22 @@
     font-weight: 500;
 }
 
+.timeline-company {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.timeline-logo {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    object-fit: contain;
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 4px;
+}
+
 
 .timeline-date {
     background: var(--bg-hover);
@@ -1950,6 +1966,22 @@ img:not([src]) {
     color: var(--text-secondary);
     line-height: 1.7;
     margin-bottom: 1.5rem;
+}
+
+.cert-badge-wrapper {
+    background: #FFFFFF;
+}
+
+.cert-badge-image {
+    object-fit: contain;
+    padding: 1.5rem;
+}
+
+.cert-verify {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--border);
 }
 
 .cert-score-section {
